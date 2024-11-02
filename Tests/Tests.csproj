@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\PersonalBuyAPI\EcommerceAPI.csproj" />
+    <ProjectReference Include="..\PersonalBuyChallengeAPI\PersonalBuyEcommerceAPI.csproj" />
   </ItemGroup>
 
   <ItemGroup>
