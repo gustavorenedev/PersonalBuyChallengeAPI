@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "k5o3g0OblxZxQIGk4r6bopJQegqEvLFefPJnvLDO+nM=",
+  "Source": "PersonalBuyPaymentAPI",
+  "BasePath": "_content/PersonalBuyPaymentAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
