@@ -176,7 +176,12 @@ Para baixar e executar o projeto, siga os passos abaixo:
 Utilize o comando `git clone` para clonar o repositório em sua máquina local:
 
 ```bash
-git clone https://github.com/gustavorenedev/PersonalBuyAPI.git
+git clone https://github.com/gustavorenedev/PersonalBuyChallengeAPI.git
+```
+
+### Entre na pasta PersonalBuyChallengeAPI
+```bash
+cd ./PersonalBuyChallengeAPI
 ```
 
 ### Restaurar as Dependências
@@ -184,6 +189,8 @@ git clone https://github.com/gustavorenedev/PersonalBuyAPI.git
 
 No terminal:
 - dotnet restore
+
+## Abra a solution
 
 ## Configurar o Banco de Dados
 Certifique-se de que você tem um banco de dados Oracle configurado. Atualize as configurações de conexão no arquivo appsettings.json de acordo com suas configurações locais.
