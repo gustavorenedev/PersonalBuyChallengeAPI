@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonalBuyEcommerceAPI", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonalBuyPaymentAPI", "..\PersonalBuyPaymentAPI\PersonalBuyPaymentAPI.csproj", "{A7F1B7FD-A450-4F48-957E-1939B0050231}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecommendationProductAPI", "..\RecommendationProductAPI\RecommendationProductAPI.csproj", "{32E17623-6AE6-4DF0-843D-BFE3AB7A9F34}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "..\Tests\Tests.csproj", "{F3BF3F62-A5A6-4BAC-BCEB-7411476501D1}"
 EndProject
 Global
@@ -25,10 +23,6 @@ Global
 		{A7F1B7FD-A450-4F48-957E-1939B0050231}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7F1B7FD-A450-4F48-957E-1939B0050231}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7F1B7FD-A450-4F48-957E-1939B0050231}.Release|Any CPU.Build.0 = Release|Any CPU
-		{32E17623-6AE6-4DF0-843D-BFE3AB7A9F34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{32E17623-6AE6-4DF0-843D-BFE3AB7A9F34}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{32E17623-6AE6-4DF0-843D-BFE3AB7A9F34}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{32E17623-6AE6-4DF0-843D-BFE3AB7A9F34}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F3BF3F62-A5A6-4BAC-BCEB-7411476501D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F3BF3F62-A5A6-4BAC-BCEB-7411476501D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3BF3F62-A5A6-4BAC-BCEB-7411476501D1}.Release|Any CPU.ActiveCfg = Release|Any CPU

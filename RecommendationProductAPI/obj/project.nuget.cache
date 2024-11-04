@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uFO2dQR7lDf9iwa0oPjlGOfrlXpcLMFnD4bIbb9yTfVPih93IeW3WCX/ON73XWvWWFdahwJGT0pRgV1SubLWVA==",
+  "dgSpecHash": "49YDCClV4hwaNka0t4wcaBio60EF0QWN5SYiS6zSA+Uwa7wQLTcGq9OVmALl3u7x6xVnmf5IVundCIdzGgPifA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\reneg\\Documents\\teste2\\RecommendationProductAPI\\RecommendationProductAPI.csproj",
+  "projectFilePath": "C:\\Users\\reneg\\Documents\\PersonalBuyChallenge4Sprint\\PersonalBuyChallengeAPI\\RecommendationProductAPI\\RecommendationProductAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\reneg\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\reneg\\.nuget\\packages\\microsoft.ml\\3.0.1\\microsoft.ml.3.0.1.nupkg.sha512",

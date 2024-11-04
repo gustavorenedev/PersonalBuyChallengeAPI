@@ -1609,11 +1609,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\reneg\\Documents\\teste2\\RecommendationProductAPI\\RecommendationProductAPI.csproj",
+      "projectUniqueName": "C:\\Users\\reneg\\Documents\\PersonalBuyChallenge4Sprint\\PersonalBuyChallengeAPI\\RecommendationProductAPI\\RecommendationProductAPI.csproj",
       "projectName": "RecommendationProductAPI",
-      "projectPath": "C:\\Users\\reneg\\Documents\\teste2\\RecommendationProductAPI\\RecommendationProductAPI.csproj",
+      "projectPath": "C:\\Users\\reneg\\Documents\\PersonalBuyChallenge4Sprint\\PersonalBuyChallengeAPI\\RecommendationProductAPI\\RecommendationProductAPI.csproj",
       "packagesPath": "C:\\Users\\reneg\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\reneg\\Documents\\teste2\\RecommendationProductAPI\\obj\\",
+      "outputPath": "C:\\Users\\reneg\\Documents\\PersonalBuyChallenge4Sprint\\PersonalBuyChallengeAPI\\RecommendationProductAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\reneg\\AppData\\Roaming\\NuGet\\NuGet.Config",
