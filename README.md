@@ -1,4 +1,4 @@
-# E-Commerce API
+# E-Commerce - PersonalBuyApi
 
 ## Integrantes do Grupo
 - RM551288 Gustavo René Dias Boamorte
@@ -23,6 +23,17 @@ Para este projeto de e-commerce, optamos por uma **arquitetura monolítica**. As
 
 A API foi implementada com uma arquitetura monolítica, seguindo os princípios RESTful para a comunicação com o cliente. A aplicação é construída usando ASP.NET Core, com uma base de dados Oracle para persistência de dados.
 Uma API para gerenciamento de clientes, produtos e carrinhos de compras, com foco em uma ML para envio de sugestões de compras em emails no sistema de ecommerce.
+
+### Princípios SOLID
+- Single Responsibility Principle (SRP): Cada classe e método tem uma única responsabilidade. Isso é aplicado às camadas Controller, Service e Repository, separando a lógica de negócios e a persistência de dados.
+- Dependency Injection (DI): Implementado para desacoplar dependências e facilitar testes. Utilizamos a injeção de dependências no Startup.cs para gerenciar instâncias de serviços e repositórios.
+- Interface Segregation Principle (ISP): As interfaces foram projetadas de forma coesa, evitando métodos desnecessários.
+
+### Testes Unitários
+Os testes unitários foram desenvolvidos para validar a lógica dos métodos principais nas camadas de Service e Repository. Utilizamos xUnit como framework de testes, assegurando que cada funcionalidade isolada opere conforme o esperado
+
+- Validação de CRUD: Testes para criação, leitura, atualização e exclusão dos recursos de Usuário, Produto e Carrinho.
+- Validação de cenário para os métodos da service.
 
 #### Estrutura do Projeto
 - **Controllers**: Responsáveis por gerenciar as requisições HTTP e retornar respostas adequadas.
@@ -154,6 +165,36 @@ A seguir estão os endpoints CRUD disponíveis para os recursos de **usuários**
 - **PUT /cart/{clientId}/update/{productId}/{quantityChange}**
   - **Descrição**: Atualiza a quantidade de um produto no carrinho de compras de um cliente.
   - **Parâmetros**: `clientId` - Identificador do cliente, `productId` - Identificador do produto, `quantityChange` - Quantidade a ser ajustada (positiva ou negativa).
+ 
+- **DELETE /cart/{clientId}/delete**
+  - **Descrição**: Eu removo o carrinho do usuário.
+  - **Parâmetros**: `clientId` - Identificador do cliente.
+
+### Pagamento do carrinho (Payments) - Via Stripe
+
+- **POST /Payment/{clientId}**
+  - **Descrição**: Cria um link para você efetuar o pagamento do carrinho via Stripe(lembrar no momento de copiar e colar a url remover as aspas duplas).
+  - **Parâmetros**: `clientId` - Identificador do cliente.
+
+## API de Pagamento
+
+- **POST /api/Stripe/Payment**
+  - **Descrição**: Monto o pagamento para uma lista de produtos.
+  - **Corpo da Requisição**:
+    ```json
+    [
+      {
+        "product": {
+          "productId": 0,
+          "name": "string",
+          "price": 0,
+          "description": "string"
+        },
+        "productId": 0,
+        "quantity": 0
+      }
+    ]
+    ```
 
 ## Design Pattern Utilizado
 
@@ -179,7 +220,7 @@ Utilize o comando `git clone` para clonar o repositório em sua máquina local:
 git clone https://github.com/gustavorenedev/PersonalBuyChallengeAPI.git
 ```
 
-### Entre na pasta PersonalBuyChallengeAPI
+### Entre na pasta PersonalBuyChallengeAPI ou pelo terminal:
 ```bash
 cd ./PersonalBuyChallengeAPI
 ```
@@ -190,7 +231,7 @@ cd ./PersonalBuyChallengeAPI
 No terminal:
 - dotnet restore
 
-## Abra a solution
+## Abra a o arquivo sln
 
 ## Configurar o Banco de Dados
 Certifique-se de que você tem um banco de dados Oracle configurado. Atualize as configurações de conexão no arquivo appsettings.json de acordo com suas configurações locais.
@@ -200,9 +241,12 @@ Aplique as migrações do banco de dados no terminal:
 - dotnet ef database update
 
 ## Executar o Projeto
-Inicie a aplicação:
-
+Inicie a aplicação com dos dois projetos, PersonalBuyEcommerceAPI com o PersonalBuyPaymentAPI:
+Indo na pasta de cada um via terminal pode utilizar o:
 - dotnet run
+
+ou, na solution configurar para iniciar as duas aplicações pelo Configure Startup Project
+![image](https://github.com/user-attachments/assets/1977e53b-26e8-4520-9ca3-7f9b9d62b101)
 
 ## Acessar a API
 A API estará disponível em http://localhost:5267/swagger. Acesse a documentação em http://localhost:5267/swagger.
